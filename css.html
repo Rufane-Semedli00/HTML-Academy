@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ilə mətn dizaynı | HTML Academy</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">HTML<span>Academy</span></a>
+    <nav>
+        <a href="index.html">Ana səhifə</a>
+        <a href="headings.html">Başlıqlar</a>
+        <a href="formatting.html">Mətn teqləri</a>
+        <a href="css.html" class="active">CSS</a>
+        <a href="examples.html">Nümunələr</a>
+        <a href="test.html">Bilik testi</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <span class="label">03 / CSS STYLING</span>
+    <h1>CSS ilə <span>Mətn dizaynı</span></h1>
+    <p>Mətnlərin görünüşünü CSS xüsusiyyətləri ilə dəyişdirək.</p>
+</section>
+
+<main class="content">
+
+    <div class="info-box">
+        <h2>CSS nədir?</h2>
+        <p>
+            CSS veb səhifələrin görünüşünü formalaşdıran
+            üslub dilidir. Mətnin rəngini, ölçüsünü,
+            şriftini, hizalanmasını və digər xüsusiyyətlərini
+            dəyişməyə imkan verir.
+        </p>
+    </div>
+
+    <h2 class="content-title">Əsas CSS xüsusiyyətləri</h2>
+
+    <div class="css-features">
+        <div class="feature">
+            <h3>color</h3>
+            <p style="color:#8b5cf6">Mətnin rəngi</p>
+            <code>color: purple;</code>
+        </div>
+
+        <div class="feature">
+            <h3>font-size</h3>
+            <p style="font-size:25px">Mətnin ölçüsü</p>
+            <code>font-size: 25px;</code>
+        </div>
+
+        <div class="feature">
+            <h3>font-family</h3>
+            <p style="font-family:Georgia">Mətnin şrifti</p>
+            <code>font-family: Georgia;</code>
+        </div>
+
+        <div class="feature">
+            <h3>text-align</h3>
+            <p style="text-align:center">Mərkəzləşdirilmiş mətn</p>
+            <code>text-align: center;</code>
+        </div>
+
+        <div class="feature">
+            <h3>font-weight</h3>
+            <p style="font-weight:800">Qalın mətn</p>
+            <code>font-weight: bold;</code>
+        </div>
+
+        <div class="feature">
+            <h3>text-decoration</h3>
+            <p style="text-decoration:underline">Altı xətli mətn</p>
+            <code>text-decoration: underline;</code>
+        </div>
+    </div>
+
+    <div class="code-box">
+        <h3>HTML və CSS birlikdə</h3>
+        <pre><code>&lt;h1 class="title"&gt;Salam Dünya!&lt;/h1&gt;
+
+&lt;style&gt;
+.title {
+    color: #8b5cf6;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+&lt;/style&gt;</code></pre>
+    </div>
+
+    <div class="result-box">
+        <span>GÖRÜNÜŞ NÜMUNƏSİ</span>
+        <h1>Salam Dünya!</h1>
+        <p>HTML struktur yaradır, CSS isə görünüş verir.</p>
+    </div>
+
+    <div class="page-navigation">
+        <a href="formatting.html" class="btn secondary">← Əvvəlki mövzu</a>
+        <a href="examples.html" class="btn">Nümunələrə keç →</a>
+    </div>
+
+</main>
+
+<footer>
+    <h3>HTML<span>Academy.</span></h3>
+    <p>HTML-də Mətn Formalaşdırılması</p>
+</footer>
+
+</body>
+</html>

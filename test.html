@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bilik Testi | HTML Academy</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">HTML<span>Academy.</span></a>
+
+    <nav>
+        <a href="index.html">Ana səhifə</a>
+        <a href="headings.html">Başlıqlar</a>
+        <a href="formatting.html">Mətn teqləri</a>
+        <a href="css.html">CSS</a>
+        <a href="examples.html">Nümunələr</a>
+        <a href="test.html" class="active">Bilik testi</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <span class="label">05 / KNOWLEDGE TEST</span>
+    <h1>Özünü <span>sına!</span></h1>
+    <p>HTML və CSS biliklərini yoxlamağa hazırsan?</p>
+</section>
+
+<main class="quiz-container">
+
+    <div class="quiz-heading">
+        <span class="quiz-label">HTML ACADEMY QUIZ</span>
+        <h2>Biliklərini yoxla</h2>
+        <p>5 sualı cavablandır və nəticəni öyrən.</p>
+    </div>
+
+    <div class="quiz-card" id="quiz">
+
+        <div class="quiz-info">
+            <span id="question-number">Sual 1 / 5</span>
+            <span id="score">Xal: 0</span>
+        </div>
+
+        <div class="progress-bg">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+
+        <h3 id="question">Sual burada görünəcək</h3>
+
+        <div class="answers" id="answers"></div>
+
+        <p id="feedback" class="feedback"></p>
+
+        <button id="next-btn" class="btn next-btn" disabled>
+            Növbəti sual →
+        </button>
+
+    </div>
+
+    <div class="result-card" id="result" hidden>
+        <div class="result-icon">🏆</div>
+        <h2>Test tamamlandı!</h2>
+
+        <p id="result-message"></p>
+
+        <div class="result-score">
+            <span id="final-score">0 / 5</span>
+            <small>Düzgün cavab</small>
+        </div>
+
+        <p id="percentage"></p>
+
+        <button class="btn" onclick="restartQuiz()">
+            Yenidən başla ↻
+        </button>
+
+        <a href="index.html" class="btn secondary">
+            Ana səhifəyə qayıt
+        </a>
+    </div>
+
+</main>
+
+<footer>
+    <h3>HTML<span>Academy.</span></h3>
+    <p>HTML-də Mətn Formalaşdırılması</p>
+    <p>© 2026 | Tədris və təqdimat layihəsi</p>
+</footer>
+
+<script src="test.js"></script>
+
+
+</body>
+</html>
